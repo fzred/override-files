@@ -25,7 +25,7 @@ function override(sPath, destPath) {
             overrideFile(sPath, src)
         } else if (stat.isDirectory()) {
             // 递归
-            readyFiles(dir)
+            override(src)
         }
     })
 }
